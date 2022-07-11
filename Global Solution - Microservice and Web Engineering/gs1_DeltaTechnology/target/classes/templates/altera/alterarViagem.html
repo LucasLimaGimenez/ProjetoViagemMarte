@@ -1,0 +1,86 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Global Solution - Delta Technology</title>
+	
+	<link th:href = "@{/css/style.css}" rel="stylesheet">
+</head>
+<body>
+	<nav id="navbar">
+		<div id="navbar-container">
+			<h1 class="logo">Tourism on Mars Company</h1>
+			<ul id="navbar-items">
+				<li><p>Início</p></li>
+				<li><p>Cadastro</p></li>
+				<li><p>Listar</p></li>
+				<li><a class="current">Alterar</a></li>
+			</ul>
+		</div>
+	</nav>
+	
+	<section id="showcase-alterar">
+		<h1 class="titulo-formulario">Tela de Alterar Cadastro</h1>
+
+        <form action="#" th:action="@{/salvarViagem}" method="post" class="formulario" th:object="${viagemobj}"> 
+        
+			<div class="alinha-imagem">
+            <img src="/images/nave.png" alt="" class="imagem-formulario">
+            </div>
+            
+            <div class="dados">
+                <label for="id">Id do cadastro da viagem:</label>
+                <input type="number" min="0" oninput="validity.valid||(value='');" th:field="*{id}" class="input-number" id="id" name="id" readonly="readonly">
+            </div>
+            
+            <div class="dados">
+                <label for="dataDecolagem">Data de decolagem:</label>
+                <input type="date" class="input-data" id="dataDecolagem" th:field="*{dataDecolagem}" name="dataDecolagem" required>
+            </div>
+            
+            <div class="dados">
+                <label for="durEstadia">Duração de dias de estadia em Marte:</label>
+                <input type="number" min="0" oninput="validity.valid||(value='');" th:field="*{durEstadia}" class="input-number" id="durEstadia" name="durEstadia" required>
+            </div>
+            
+            <div class="dados">
+                <label for="quantAssento">Quantidade de assentos disponíveis:</label>
+                <input type="number" min="0" oninput="validity.valid||(value='');" th:field="*{quantAssento}" class="input-number" id="quantAssento" name="quantAssento" required>
+            </div>     
+            
+            <div class="dados">
+                <label for="nomeNave">Nome do modelo da nave:</label>
+                <input type="text" class="input-text" id="nomeNave" name="nomeNave" th:field="*{nomeNave}" maxlength="9" required>
+            </div>
+
+            <div class="dados">
+                <label for="nomePrimeiroComandante">Nome do 1° comandante:</label>
+                <input type="text" class="input-text" id="nomePrimeiroComandante" th:field="*{nomePrimeiroComandante}" name="nomePrimeiroComandante" required>
+            </div>  
+
+            <div class="dados">
+                <label for="matriculaPrimeiroComandante">Matrícula interespacial do 1º comandante:</label>
+                <input type="text" class="input-text" id="matriculaPrimeiroComandante" th:field="*{matriculaPrimeiroComandante}" maxlength="12" name="matriculaPrimeiroComandante" required>
+            </div> 
+            
+            <div class="dados">
+                <label for="nomeSegundoComandante">Nome do 2° comandante:</label>
+                <input type="text" class="input-text" id="nomeSegundoComandante" th:field="*{nomeSegundoComandante}" name="nomeSegundoComandante" required>
+            </div>  
+
+            <div class="dados">
+                <label for="matriculaSegundoComandante">Matrícula interespacial do 2º comandante:</label>
+                <input type="text" class="input-text" id="matriculaSegundoComandante" th:field="*{matriculaSegundoComandante}" maxlength="12" name="matriculaSegundoComandante" required>
+            </div> 
+
+            <input type="submit" class="input-enviar" name="acao" value="Alterar Cadastro">
+        </form>
+    </section>
+	
+	</body>
+	<footer id="footer">
+		<p>Copyright 2022 - Todos os direitos reservados.</p>
+		<p>Feito por Delta Technology.</p>
+	</footer>

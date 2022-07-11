@@ -1,0 +1,46 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Global Solution - Delta Technology</title>
+	
+	<link th:href = "@{/css/style.css}" rel="stylesheet">
+</head>
+<body>
+	<nav id="navbar">
+		<div id="navbar-container">
+			<h1 class="logo">Tourism on Mars Company</h1>
+			<ul id="navbar-items">
+				<li><p>Início</p></li>
+				<li><p>Cadastro</p></li>
+				<li><p>Listar</p></li>
+				<li><a class="current">Excluir</a></li>
+			</ul>
+		</div>
+	</nav>
+	
+	<section id="showcase-excluir">
+	
+		<h1 class="titulo-formulario-voltar">Você excluiu o cadastro da viagem com sucesso!</h1>
+
+        <div class="notificacao"> 
+        
+			<div class="alinha-imagem">
+            <img src="/images/nave.png" alt="" class="imagem-formulario">
+            </div>
+            
+            <div class="centraliza">
+            <h2>Clique no botão abaixo para voltar para a tela inicial</h2>
+            
+            <a href="index" class="btn-voltar">Voltar</a>
+            </div>
+        </div>
+        
+    </section>
+	</body>
+	<footer id="footer">
+		<p>Copyright 2022 - Todos os direitos reservados.</p>
+		<p>Feito por Delta Technology.</p>
+	</footer>

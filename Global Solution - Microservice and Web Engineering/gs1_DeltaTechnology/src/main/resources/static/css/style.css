@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-family: 'Roboto', cursive;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover{
+	color:#ffa500;
+}
+
+.current{
+	color:#ffa500;
+}
+
+.btn {
+	display: inline-block;
+	padding: 15px 60px;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	background: #111;
+	color: #eee;
+	border-radius: 5px;
+	transition: background 500ms ease;
+}
+
+.btn-voltar {
+	display: inline-block;
+	padding: 15px 60px;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	background: #111;
+	color: #eee;
+	border-radius: 5px;
+	transition: background 500ms ease;
+	margin: 50px 0 30px 0;
+}
+
+.btn-voltar:hover {
+	cursor: pointer;
+	background: #ffa500;
+	color: #000;
+	font-weight:bold;
+}
+
+.btn:hover{
+	cursor: pointer;
+	background: #ffa500;
+	color: #000;
+	font-weight:bold;
+}
+
+.headline{
+	font-size: 2.2rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 50px;
+	letter-spacing: 2px;
+}
+
+#navbar{
+	width: 100%;
+	background: #111;
+	color: #eee;
+	height: 80px;
+	position:fixed;
+}
+
+#navbar-container{
+	width: 80%;
+	height: 100%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+}
+
+.logo{
+	font-size: 2rem;
+}
+
+#navbar-items{
+	display: flex;
+	list-style: none;
+	text-transform: uppercase;
+}
+
+#navbar-items li{
+	padding: 10px;
+}
+
+#showcase {
+	height: 105vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #eee;
+	background: url('/images/fundotela.jpg') no-repeat center center/cover;
+	background-color: rgba(0,0,0,0.7);
+	background-blend-mode: color;
+}
+
+#showcase-cadastro {
+	height: 150vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #eee;
+	background: url('/images/fundotela.jpg') no-repeat center center/cover;
+	background-color: rgba(0,0,0,0.7);
+	background-blend-mode: color;
+}
+
+#showcase-alterar {
+	height: 160vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #eee;
+	background: url('/images/fundotela.jpg') no-repeat center center/cover;
+	background-color: rgba(0,0,0,0.7);
+	background-blend-mode: color;
+}
+
+#showcase-listar,#showcase-excluir {
+	height: 105vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #eee;
+	background: url('/images/fundotela.jpg') no-repeat center center/cover;
+	background-color: rgba(0,0,0,0.7);
+	background-blend-mode: color;
+}
+
+#showcase-container{
+	text-align: center;
+}
+
+#showcase-container h2{
+	font-size: 2.5rem;
+}
+
+#showcase-container p{
+	font-size: 1.2rem;
+	padding: 7px 0;
+}
+
+#qualities{
+	width: 100%;
+	background: #eee;
+	color: #111;
+	padding: 50px;
+}
+
+#qualities-container{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-items: center;
+	padding: 15px;
+}
+
+.quality{
+	display: inline-block;
+	width: 100%;
+}
+
+.alinha-texto{
+	align-items:center;
+	text-align: center;
+	padding-top: 20px;
+	margin-bottom: -20px;
+	font-size: 1.4rem;
+}
+
+#features{
+	width: 100%;
+	background: #222;
+	color: #eee;
+	padding: 50px;
+}
+
+#features-container{
+	width: 100%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 50px;
+}
+
+.feature {
+	display: flex;
+	flex-direction: column;
+	background: #333;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.feature-title{
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-top: 7px;
+	margin-bottom: 10px;
+}
+
+.icons{
+	height: 40px;
+	width: 40px;
+	margin-right: 15px;
+}
+
+#product{
+	width: 100%;
+	padding: 50px;
+}
+
+#product-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#items{
+	width: 650px;
+}
+
+.item{
+	display: flex;
+	padding: 10px;
+	margin: 15px 0;
+	font-size: 1.2rem;
+}
+
+.nave{
+	height: 600px;
+	width: 550px;
+	margin-right: -100px;
+}
+
+
+#tela-cadastro{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 1.2rem;
+	background: #333;
+	padding: 15px;
+	margin: 15px 0;
+	border-radius: 5px;
+	color:#eee;
+}
+
+#tela-cadastro h2{
+	font-size: 1.6rem;
+}
+
+.estiliza-botao{
+	margin-top: 50px;
+	border:1px solid #ffa500;
+	padding: 10px;
+	font-size: 1.8rem;
+	background: #111;
+	border-radius: 5px;
+	margin-bottom:40px;
+	font-weight: bold;
+}
+
+.estiliza-botao:hover{
+	background: #ffa500;
+}
+
+.estiliza-link:hover{
+	color: #111;
+}
+
+.estiliza-link{
+	color: #ffa500;
+}
+
+.arruma-titulo{
+	padding-top:30px;
+}
+
+#footer{
+	background: #ffa500;
+	color: #111;
+	margin-top: -16px;
+	padding: 30px;
+	text-align: center;
+	font-weight: bold;
+	font-size:1.0rem;
+}
+
+.formulario{
+    width: 500px;
+    padding: 30px;
+    border:1px solid #ccc;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+.notificacao{
+    width: 500px;
+    padding: 30px;
+    border:1px solid #ccc;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+.dados{
+    width: 100%;
+    margin: 15px 0px;
+}
+.dados label, 
+.dados span{
+    padding:10px 10px 5px 10px;
+    font-size: 1.4em;
+    display: block;
+    width: 100%;
+}
+
+.input-text,
+.input-email,
+.input-data,
+.input-number{
+    width: 100%;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    outline: none;
+    text-align: center;
+}
+
+.input-enviar{
+    display: block;
+    background-color: #333;
+    color: #ffa500;
+    font-weight: 600;
+    font-size: 26px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 60%;
+    height: 70px;
+    margin: 50px auto 20px auto;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.input-enviar:hover{
+    background-color: #ffa500;
+    color: #333;
+}
+
+.imagem-formulario{
+    width: 350px;
+    height: 200px;
+}
+
+.alinha-imagem{
+	align-items:center;
+	margin:0 auto;
+	text-align:center;
+}
+
+.arredondamento{
+    border-radius: 30px;
+    padding: 30px;
+    background-color: #191970;
+}
+
+.titulo-formulario{
+	font-size:60px;
+	padding-bottom: 50px;
+	padding-top:60px;
+}
+
+.titulo-formulario-voltar{
+	font-size:60px;
+	padding-bottom: 50px;
+	padding-top:-160px;
+}
+
+.titulo-formulario-listar{
+	font-size:60px;
+	padding-bottom: 70px;
+	margin-top:-450px;
+}
+
+.arruma-titulo-tabela{
+	color: #eee;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.arruma-valores-tabela{
+	color: #eee;
+	font-size: 16px;
+}
+
+.arruma-link-tabela{
+	border:1px solid #ffa500;
+	padding: 5px;
+	font-size: 1.0rem;
+	background: #ffa500;
+	border-radius: 5px;
+	font-weight: bold;
+	color: black;
+}
+
+.arruma-link-tabela:hover{
+	color: black;
+}
+
+.botao-voltar{
+	display: block;
+    background-color: #333;
+    color: #ffa500;
+    font-weight: 600;
+    font-size: 26px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 60%;
+    height: 70px;
+    margin: 50px auto 20px auto;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.centraliza{
+	margin-top: 30px;
+	text-align:center;
+	align-items:center;
+}
